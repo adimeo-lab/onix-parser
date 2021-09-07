@@ -115,6 +115,13 @@ class Date
 
             } else {
 
+                if ($month == '') {
+                    $month = 1;
+                }
+                if ($day == '') {
+                    $day = 1;
+                }
+
                 $dateString = implode('-', [
                     $year, $month ?? 1, $day ?? 1
                 ]);
